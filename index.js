@@ -6,13 +6,13 @@ const searchEl = document.querySelector("#search-input")
 const savedFilmsLocalStorage = JSON.parse(localStorage.getItem("savedFilms"))
 
 searchBtn.addEventListener("click", async () => {
-    const res = await fetch(`http://www.omdbapi.com/?apikey=dec6795d&s=${searchEl.value}&t=movie`)
+    const res = await fetch(`https://www.omdbapi.com/?apikey=dec6795d&s=${searchEl.value}&t=movie`)
     const data = await res.json()
     getFilmHtml = ""
     let id = 1
     films = []
     for (let item of data.Search) {
-        const res = await fetch(`http://www.omdbapi.com/?apikey=dec6795d&i=${item.imdbID}&type=movie`)
+        const res = await fetch(`https://www.omdbapi.com/?apikey=dec6795d&i=${item.imdbID}&type=movie`)
         const data = await res.json()
         renderFilms(data, id)
         id++
