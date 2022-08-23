@@ -27,6 +27,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: #7e7e7e;
+}
+
 button {
     background: none;
     border: none;
