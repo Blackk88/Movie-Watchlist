@@ -5,7 +5,7 @@ Add movies to your personal watchlist
 
 <a href=https://blackk88.github.io/Movie-Watchlist/>Live Demo</a>
 
-Get info from openDB API and allow user to save movie to watchlist using localStorage.   
+Getting info from openDB API and allowing user to save movie to watchlist using localStorage.   
 Built using vanilla JS, building this app I've practiced following things:
 
 - *async / await JS*
